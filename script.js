@@ -4,6 +4,7 @@ const display = document.getElementById("display");
 function addToDisplay(input){
 
     display.value += input;
+    display.scrollLeft = display.scrollWidth;
 }
 
 function clearDisplay(){
